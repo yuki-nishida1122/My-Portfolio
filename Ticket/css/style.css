@@ -1,0 +1,266 @@
+body {
+  display: flex;
+  margin: 0;
+  height: 1200px;
+}
+/* navのCSS */
+.navbar{
+  background-color:  rgba(128, 128, 128, 0.8);
+  width: 400px;
+}
+.navbar a{
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: normal;
+}
+.navbar h1{
+  font-size: 32px;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-right: 40px; 
+}
+.nav{
+  padding: 0px;
+}
+.nav a{
+  display: block;
+  line-height: 64px;
+  opacity: 0.5;
+}
+.nav a:hover{
+  opacity: 1.0;
+  background: rgba(128, 128, 128, 1.0) ;
+  border-left: 4px solid white;
+}
+.settings{
+  border-top:2px solid white;
+}
+.navbar .fas {
+  width: 40px;
+  text-align: center;
+}
+
+
+/* 右側最上ヘッダーのCSS */
+.content{
+  padding:25.56px 24px;
+  background-color: whitesmoke;
+  width: 100%;
+}
+.top-bar{
+  display: flex;
+  width: 100%;
+}
+.top-menu{
+  margin-left: auto;
+}
+.top-menu ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.top-menu li{
+  list-style: none;
+  margin: 0 16px;
+  margin-top: 16px;
+}
+.top-menu a{
+  opacity: 0.6;
+  font-weight: bold;
+}
+.own-icon a{
+  opacity: 1.0;
+}
+.top-menu .fas{
+  vertical-align: middle;
+  font-size: 24px;
+}
+.fa-grip-lines-vertical{
+  opacity: 0.2;
+  margin: 0;
+  padding: 0;
+}
+.user-icon{
+  height: 24px;
+  width: auto;
+  border-radius: 100%;
+  border: 1px double rgb(128, 128, 128);
+}
+
+
+/* リンクのCSS */
+.content a{
+  text-decoration: none;
+  color: black;
+}
+.content a:hover{
+  opacity: 1.0;
+  text-decoration: underline;
+}
+
+
+/* 右側の内容のCSS */
+.contents {
+  background: white;
+  border: 1px solid rgba(128, 128, 128, 0.8);
+  border-radius: 8px;
+  padding: 8px 0px;
+  margin-top: 16px;
+}
+/* ヘッダーのCSS */
+.content-header{
+  display: flex;  
+  padding-left: 24px;
+  padding-right: 32px;
+}
+
+
+.header-menu{
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.header-menu li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 16px;
+  margin-top: 16px;
+}
+.header-menu a{
+  color: black;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+
+/* columnのCSS */
+.table-column {
+  padding: 0px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.8);
+}
+.table-column ul{
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  margin-bottom:8px;
+  color: rgba(128, 128, 128, 0.9);
+}
+.ticket-detail {
+  width: 35%;
+  display: flex;
+}
+.customer-name {
+  width: 25%;
+}
+.date{
+  width: 20%;
+}
+.priority{
+  width: 15%;
+}
+.edit-btn {
+  width: 5%;
+}
+
+
+/* 顧客１行のCSS */
+.customer{
+  display: flex;
+  height: 80px;
+  padding-left: 40px;
+  padding-top: 24px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+}
+
+.customer:hover{
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+
+/* チケット詳細のCSS */
+.ticket-detail img{
+  height: 56px;
+  width: auto;
+  border-radius: 100%;
+  border: 1px double rgb(128, 128, 128);
+}
+.detail-text{
+  margin-left: 24px;
+}
+
+
+/* 行のテキストのCSS */
+.main-text p{
+  margin: 0;
+  line-height: 28px;
+}
+.sub-text p{
+  line-height: 28px;
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+
+/* customerのCSS */
+.customer-name a{
+  display: inline-block;
+}
+
+
+/* priorityのCSS */
+.priority p{
+  text-align: center;
+  display: inline-block;
+  color: white;
+  width: 72px;
+  line-height: 32px;
+  border-radius: 16px;
+}
+.high p{
+  background-color: red;
+}
+.low p{
+  background-color: rgb(248, 184, 8);
+}
+.normal p{
+  width: 96px;
+  background-color: mediumseagreen;
+}
+
+/* editボタンのCSS */
+.edit-btn a{
+  opacity: 0.3;
+}
+
+/* フッターのCSS*/
+.content-footer{
+  display: flex;
+  line-height: 40px;
+  justify-content: flex-end;
+  margin-right: 64px;
+}
+.content-footer p{
+  color:rgba(128, 128, 128, 0.9);
+  font-size: 16px;
+  padding: 0;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.row-select select{
+  height: 40px;
+  width: 40px;
+  border:none;
+  font-size: 16px;
+}
+.page-btn{
+  margin: auto 0;
+}
+.page-btn .fas{
+  margin: 0px 16px;
+  font-size: 24px;
+  color:rgba(128, 128, 128, 0.5);
+}
+.page-btn .fas:hover{
+  color:rgba(128, 128, 128, 1.0);
+}
+
+
