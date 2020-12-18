@@ -267,30 +267,20 @@ body {
 }
 /* マックブックの左半分から */
 @media screen and (max-width:840px){
-  body{
-    display: block;
-    width: 94%;
-  }
-  .nav-header{
-    display: inline-block;
-    width: 106%;
-    background-color: white;
-    padding-left:40px;
-  }
-  .nav-header-menu{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .nav-header-menu .nav-header-item{
-    width: 33%;
-  }
-  .nav-header-item a{
-    color: black;
-    text-decoration: none;
-  }
   .navbar{
     display: none;
   }
 }
 
+
+@media screen and (max-width:420px){
+  .navbar{
+    display: none;
+  }
+  .content{
+    width: auto;
+  }
+  .top-menu .name{
+    margin-top: 0px;
+  }
+}
