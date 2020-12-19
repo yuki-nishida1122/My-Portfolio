@@ -71,6 +71,10 @@ body {
 }
 .hidden-box li{
   margin: 4px;
+  display: block;
+}
+.hidden-box li:hover{
+  text-decoration: underline;
 }
 .ham-menu{
   margin: auto 0px;
@@ -337,7 +341,7 @@ body {
   .fa-bars{
     height: 48px;
   }
-
+  
   input:checked ~ .unshown{
     display: block;
     height: 280px;
@@ -356,6 +360,45 @@ body {
   }
   .top-menu .name{
     margin-top: 0px;
+  }
+  .table-column li{
+    font-size: 8px;
+  }
+  .table-column ul{
+    padding-left: 8px;
+    display: none;
+  }
+  .customer{
+    padding-left: 16px;
+    height: 120px;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .ticket-detail{
+    width: auto;
+  }
+  .detail-text{
+    display: flex;
+  }
+  .customer-name{
+    width: auto;
+    display: flex;
+  }
+  .date{
+    width: auto;
+    display: flex;
+  }
+  .customer img{
+    display: none;
+  }
+  .main-text{
+    margin-right: 8px;
+  }
+  .detail-text{
+  margin-left: 0px;
+  }
+  .priority{
+    width: 100%;
   }
 
 }
