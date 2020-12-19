@@ -42,6 +42,36 @@ body {
 .nav-header{
   display: none;
 }
+.logo{
+  display: flex;
+}
+.logo .fas{
+  display: none;
+  color: white;
+  font-size: 32px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+.open{
+  margin: auto;
+  margin-right: 0px;
+}
+.unshown{
+  display: none;
+}
+#menu-open {
+  margin: auto 0px;
+  margin-left: auto;
+}
+.hidden-box{
+  list-style: none;
+  padding: 0px;
+  margin-right: 16px;
+}
+.ham-menu{
+  margin: auto 0px;
+  margin-left: auto;
+}
 
 
 /* 右側最上ヘッダーのCSS */
@@ -267,17 +297,49 @@ body {
 }
 /* マックブックの左半分から */
 @media screen and (max-width:840px){
-  .navbar{
+  .nav{
     display: none;
   }
+  .navbar{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    background-color: rgba(128, 128, 128, 1.0);
+  }
+  .nav-top{
+    margin: 0px;
+  }
+  .navbar .nav-top{
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .content{
+    margin-top: 72px;
+  }
+  .logo .fas{
+    display: block;
+    cursor: pointer;
+  }  
+  .fa-bars{
+    height: 72px;
+  }
+
+  input:checked ~ .unshown{
+    display: block;
+    height: 240px;
+  }
+
 }
 
 
 @media screen and (max-width:420px){
-  .navbar{
+  
+  .nav{
     display: none;
   }
   .content{
+    margin-top: 72px;
     width: auto;
   }
   .top-menu .name{

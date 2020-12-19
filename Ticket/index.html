@@ -10,7 +10,34 @@
   <body>
 
     <aside class="navbar">
-      <h1 class="nav-top"><a href="#"><i class="fab fa-github"></i> Git Hub</a></h1>
+      <div class="logo">
+        <h1 class="nav-top"><a href="#"><i class="fab fa-github"></i> Git Hub</a></h1>
+
+        <div class="ham-menu">
+
+          <input id="ham-menu" type="checkbox" class="unshown">
+          <label id="menu-open" for="ham-menu">
+            <i class="fas fa-bars"></i>
+          </label>
+          
+          <label for="ham-menu" class="unshown" id="menu-close">
+            
+            <ul class="hidden-box">
+              <li class="hideen-item"><a href="#">Overview</a></li>
+              <li class="hidden-item"><a href="#">Tickets</a></li>
+              <li class="hidden-item"><a href="#">Ideas</a></li>
+              <li class="hidden-item"><a href="#">Contacts</a></li>
+              <li class="hidden-item"><a href="#">Agents</a></li>
+              <li class="hidden-item"><a href="#">Articles</a></li>
+              <li class="settings hidden-item"><a href="#">Settings</a></li>
+              <li class="hidden-item"><a href="#">Subscription</a></li>
+            </ul>
+            
+          </label>
+        </div>
+          
+      </div>
+      
 
       <ul class="nav">
         <li class="nav-item"><a href="#">&emsp;<i class="fas fa-chart-pie"></i>&ensp;Overview</a></li>
