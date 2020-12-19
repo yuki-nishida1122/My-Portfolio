@@ -67,10 +67,23 @@ body {
   list-style: none;
   padding: 0px;
   margin-right: 16px;
+  float: right;
+}
+.hidden-box li{
+  margin: 4px;
 }
 .ham-menu{
   margin: auto 0px;
   margin-left: auto;
+  float: right;
+}
+.ham-menu .fas{
+  float: right;
+  height: 56px;
+}
+
+.fa-times{
+  display: none;
 }
 
 
@@ -322,19 +335,18 @@ body {
     cursor: pointer;
   }  
   .fa-bars{
-    height: 72px;
+    height: 48px;
   }
 
   input:checked ~ .unshown{
     display: block;
-    height: 240px;
+    height: 280px;
   }
-
+  
 }
 
 
 @media screen and (max-width:420px){
-  
   .nav{
     display: none;
   }
@@ -345,4 +357,5 @@ body {
   .top-menu .name{
     margin-top: 0px;
   }
+
 }
