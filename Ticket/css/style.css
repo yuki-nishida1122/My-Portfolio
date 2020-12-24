@@ -60,24 +60,30 @@ body {
   display: none;
 }
 #menu-open {
-  margin: auto 0px;
+  margin: 8px 0px;
   margin-left: auto;
 }
 .hidden-box{
+  display: none;
   list-style: none;
   padding: 0px;
   margin-right: 16px;
   float: right;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 .hidden-box li{
   margin: 4px;
   display: block;
+  font-size: 20px;
 }
 .hidden-box li:hover{
   text-decoration: underline;
 }
 .ham-menu{
-  margin: auto 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
   margin-left: auto;
   float: right;
 }
@@ -338,11 +344,8 @@ body {
     display: block;
     cursor: pointer;
   }  
-  .fa-bars{
-    height: 48px;
-  }
   
-  input:checked ~ .unshown{
+  input:checked ~ .hidden-box{
     display: block;
     height: 280px;
   }
