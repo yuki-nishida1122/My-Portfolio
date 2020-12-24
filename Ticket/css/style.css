@@ -1,7 +1,7 @@
 body {
   display: flex;
   margin: 0;
-  height: 1200px;
+  height: auto;
 }
 /* navのCSS */
 .navbar{
@@ -397,5 +397,16 @@ body {
   }
   .priority{
     width: 100%;
+  }
+  .priority p{
+    margin: 0px;
+    border-radius: 0px;
+    line-height: 16px;
+  }
+  .edit-btn{
+    display: none;
+  }
+  .row-select{
+    display: none;
   }
 }
