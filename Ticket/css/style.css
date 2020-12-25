@@ -216,7 +216,6 @@ body {
   width: 5%;
 }
 
-
 /* 顧客１行のCSS */
 .customer{
   display: flex;
@@ -230,7 +229,6 @@ body {
   background-color: rgba(128, 128, 128, 0.2);
 }
 
-
 /* チケット詳細のCSS */
 .ticket-detail img{
   height: 56px;
@@ -241,7 +239,6 @@ body {
 .detail-text{
   margin-left: 24px;
 }
-
 
 /* 行のテキストのCSS */
 .main-text p{
@@ -255,12 +252,10 @@ body {
   opacity: 0.5;
 }
 
-
 /* customerのCSS */
 .customer-name a{
   display: inline-block;
 }
-
 
 /* priorityのCSS */
 .priority p{
@@ -318,6 +313,7 @@ body {
 .page-btn .fas:hover{
   color:rgba(128, 128, 128, 1.0);
 }
+
 /* マックブックの左半分から */
 @media screen and (max-width:840px){
   .nav{
@@ -349,7 +345,7 @@ body {
     display: block;
     height: 280px;
   }
-  
+
 }
 @media screen and (max-width:420px){
   .nav{
